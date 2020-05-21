@@ -26,14 +26,14 @@ function myFunction() {
         let dataTitle = document.getElementsByTagName("a")[i].getAttribute("data-title");
         //console.log(dataTitle);
 
-        let n = dataTitle.indexOf(imgSearch);
+        let n = dataTitle.toLowerCase().indexOf(imgSearch);
         //console.log(n);
 
         if (n == -1) {
-            document.getElementsByTagName("a")[i].style.display = 'none';
+            document.getElementsByTagName("a")[i].parentNode.style.display = 'none';
         }
         else {
-            document.getElementsByTagName("a")[i].style.display = 'block';
+            document.getElementsByTagName("a")[i].parentNode.style.display = 'block';
         }
     }
 }
