@@ -18,16 +18,16 @@ document.getElementById("imgsearch").addEventListener("keyup", myFunction);
 
 //the purpose this function is to read the input of imgsearch and then output to console log
 function myFunction() {
-    let i = document.getElementById("imgsearch");
-    let imgSearch = i.value.toLowerCase();
-    console.log(imgSearch);
+    let imgSearchObj = document.getElementById("imgsearch");
+    let imgSearch = imgSearchObj.value.toLowerCase();
+    //console.log(imgSearch);
 
     for (let i = 0; i < 12; i += 1) {
         let dataTitle = document.getElementsByTagName("a")[i].getAttribute("data-title");
-        console.log(dataTitle);
+        //console.log(dataTitle);
 
         let n = dataTitle.indexOf(imgSearch);
-        console.log(n);
+        //console.log(n);
 
         if (n == -1) {
             document.getElementsByTagName("a")[i].style.display = 'none';
