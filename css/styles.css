@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+input[type=search] {
+    display: block;
+    width: 40%;
+    height: 42px;
+    letter-spacing: .5px;
+    text-indent: 10px;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: thin solid #D9D9D9;
+    -webkit-appearance: textfield;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1042px;
+    margin: auto;
+}
+
+.flex-container>div {
+    margin: 45px 30px 0;
+}
+
+
+#lightbox {
+    font-family: 'Trebuchet MS', arial, sans-serif;
+}
+
+.lb-data .lb-details {
+    text-align: center !important;
+    width: 95%;
+}
+
+.lb-data .lb-caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.lb-data .lb-number {
+    display: none !important;
+}
+
+#lightboxOverlay {
+    background: #3C3C3C !important;
+    opacity: .95 !important;
+}
+
+
+/* ========================
+    Media Queries
+   
+=========================== */
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        max-width: 518px;
+        margin: auto;
+    }
+
+    .lb-data .lb-details {
+        text-align: left !important;
+        width: 85%;
+    }
+
+    .lb-data .lb-caption {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+}
